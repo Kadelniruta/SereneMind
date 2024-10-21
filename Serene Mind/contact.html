@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Serene Mind</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">Serene Mind</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-info">
+                <h1>Contact Us</h1>
+                <p>If you have any questions or would like to schedule a session with a professional counselor, please reach out to us through the form below.</p>
+
+                <!-- Counseling Image -->
+                <div class="counseling-image">
+                    <img src="images/counselling.jpg" alt="Counseling Session">
+                </div>
+            </div>
+            
+            
+
+            <!-- Scheduling Form -->
+            <div class="schedule-form">
+                <h2>Schedule a Session</h2>
+                <form id="scheduleForm">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="session-date">Preferred Date:</label>
+                    <input type="date" id="session-date" name="session-date" required>
+
+                    <label for="message">Additional Message (Optional):</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <button type="submit">Schedule Now</button>
+                </form>
+
+                <div id="confirmation" style="display:none;">
+                    <p>Thank you! Your session has been scheduled with <strong id="counselorName"></strong>. We will contact you soon with the details.</p>
+                </div>
+            
+                <div id="professional-details" style="display:none;">
+                    <h3>Your Assigned Professional</h3>
+                    <div id="counselorInfo">
+                        <!-- Professional details will be populated here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Team Section -->
+    <section class="our-team-section">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="images/Melinda-Smith-headshot-2024-1536x1536.jpeg" alt="John Doe">
+                    <h3>Melinda Smith, M.A</h3>
+                    <p>Founder & Mental Health Advocate</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/lawrence-robinson-461.jpg" alt="Jane Smith">
+                    <h3>Jane Smith</h3>
+                    <p>Licensed Professional Counselor</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/chris-saranchock.jpg" alt="Chris Lee">
+                    <h3>Chris Lee</h3>
+                    <p>Mindfulness Coach</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="info-section">
+        <div class="info-container about-us">
+            <h3>About Us</h3>
+            <p>Mental Wellness</p>
+            <p>Empowering Individuals</p>
+            <p>Support & Guidance</p>
+        </div>
+        <div class="info-container resources">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#">Mental Health Articles</a></li>
+                <li><a href="#">Motivational Videos</a></li>
+                <li><a href="#">Self-Help Tools</a></li>
+            </ul>
+        </div>
+        <div class="info-container get-in-touch">
+            <h3>Get in Touch</h3>
+            <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+            <p>Email: <a href="mailto:info@serenemind.com">info@serenemind.com</a></p>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Serene Mind. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="contact.js"></script>
+</body>
+</html>

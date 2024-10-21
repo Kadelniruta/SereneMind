@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Serene Mind</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">Serene Mind</a>
+                    <link rel="stylesheet" href="login.css">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="quiz.html">Quiz</a></li> <!-- Will be blocked if not logged in -->
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="active">Login</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="login-container">
+            <h1>Login to Serene Mind</h1>
+            <p>Log in to access the quiz and mental health resources.</p>
+
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn">Login</button>
+                </div>
+                <div class="form-group">
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+            </form>
+
+            <div class="social-login">
+                <p>Or log in with:</p>
+                <button class="btn social-btn google">Login with Google</button>
+                <button class="btn social-btn facebook">Login with Facebook</button>
+            </div>
+
+            <p class="register">Don't have an account? <a href="register.html">Register here</a></p>
+        </div>
+
+        <!-- Image side -->
+        <div class="image-side">
+            <img src="images/istockphoto-1295612631-612x612.jpg" alt="Mental health support image">
+        </div>
+    </section>
+    <div class="info-section">
+        <div class="info-container about-us">
+            <h3>About Us</h3>
+            <p>Mental Wellness</p>
+            <p>Empowering Individuals</p>
+            <p>Support & Guidance</p>
+        </div>
+        <div class="info-container resources">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#">Mental Health Articles</a></li>
+                <li><a href="#">Motivational Videos</a></li>
+                <li><a href="#">Self-Help Tools</a></li>
+            </ul>
+        </div>
+        <div class="info-container get-in-touch">
+            <h3>Get in Touch</h3>
+            <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+            <p>Email: <a href="mailto:info@serenemind.com">info@serenemind.com</a></p>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Serene Mind. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>
